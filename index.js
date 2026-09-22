@@ -1,4 +1,4 @@
-console.log("RIMURU-MD iPhone Build Starting...");
+if(!global.crypto) global.crypto = require('crypto').webcrypto;console.log("RIMURU-MD iPhone Build Starting...");
 const fs=require('fs'),path=require('path');
 const cmdFolder=path.join(__dirname,'commands');
 if(!fs.existsSync(cmdFolder)) fs.mkdirSync(cmdFolder);
